@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1c7ec66a.chunk.css",
+    "main.js": "/static/js/main.1d36e191.chunk.js",
+    "main.js.map": "/static/js/main.1d36e191.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.c3013bec.chunk.js": "/static/js/2.c3013bec.chunk.js",
+    "static/js/2.c3013bec.chunk.js.map": "/static/js/2.c3013bec.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.1b7a78110f688f4e44cd7dd67fe8c14d.js": "/precache-manifest.1b7a78110f688f4e44cd7dd67fe8c14d.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.1c7ec66a.chunk.css.map": "/static/css/main.1c7ec66a.chunk.css.map",
+    "static/media/medical-records.svg": "/static/media/medical-records.7160d728.svg",
+    "static/media/rrs-logo-reverse.png": "/static/media/rrs-logo-reverse.9167ee0f.png",
+    "static/media/sofia-pro.css": "/static/media/sofiapro-medium-webfont.bf018dec.woff"
+  }
+}

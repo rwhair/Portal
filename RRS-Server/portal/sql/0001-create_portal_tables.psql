@@ -1,0 +1,24 @@
+set client_min_messages = warning;
+
+drop table if exists portal_request cascade;
+create table portal_request (
+	request_id					uuid			primary key,
+	code						varchar			not null,
+	created_at					timestamptz		null,
+	blob_url					varchar			null,
+	payload	 					jsonb			null,
+	auth_request				jsonb			null,
+	auth_response				jsonb			null
+);
+
+drop table if exists portal_pricing cascade;
+create table portal_pricing (
+	code						varchar			not null,
+	send_to						varchar			not null,
+	info_requested				varchar			not null,
+	delivery_method				varchar			not null,
+	delivery_timeframe			varchar			not null,
+	base_charge_cents			integer			not null default(0),
+	delivery_charge_cents		integer			not null default(0)
+);
+

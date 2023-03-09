@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://unpkg.com/sanitize.css@10.0.0/sanitize.css"/>
+	<link rel="stylesheet" href="grid.css"/>
+	<link rel="stylesheet" href="template.css"/>
+	<script src="template.js"></script>
+</head>
+<body>
+	<header>
+		<img src="rrs-logo.png" width="120" height="120">
+		<h1>Medical Record Release of Information Form</h1>
+	</header>
+	<form>
+		<section id="patient">
+			<header>
+				<h2>Patient</h2>
+			</header>
+			<main>
+				<div class="grid">
+					<div class="item-4">
+						<label>Patient's Name: <input id="patient.name"/></label>
+					</div>
+					<div class="item-4">
+						<label>AKA or Maiden Name: <input id="patient.aka"/></label>
+					</div>
+					<div class="item-2">
+						<label>Date of Birth: <input id="patient.dateOfBirth"/></label>
+					</div>
+					<div class="item-2">
+						<label>SSN: <input id="patient.ssn"/></label>
+					</div>
+					<div class="item-6">
+						<label>Email: <input id="patient.email"/></label>
+					</div>
+					<div class="item-6">
+						<label>Phone Number: <input id="patient.phone"/></label>
+					</div>
+				</div>
+			</main>
+		</section>
+
+		<section id="shipping">
+			<header>
+				<h2>Delivery</h2>
+			</header>
+			<main>
+				<div class="grid">
+					<div class="item-12">
+						<div class="grid">
+							<div class="item-4">
+								<h3>Send Records To: </h3>
+								<div class="checkbox-group">
+									<span id="records.recipient.patient" class="checkbox">☐ <span class="label">Patient</span></span>
+									<span id="records.recipient.doctor" class="checkbox">☐ <span class="label">Doctor</span></span>
+									<span id="records.recipient.thirdParty" class="checkbox">☐ <span class="label">Third Party</span></span>
+								</div>
+							</div>
+							<div class="item-4">
+								<h3>Delivery Method: </h3>
+								<div class="checkbox-group">
+									<span id="records.deliveryMethod.email" class="checkbox">☐ <span class="label">Email</span></span>
+									<span id="records.deliveryMethod.fax" class="checkbox">☐ <span class="label">Fax</span></span>
+									<span id="records.deliveryMethod.mail" class="checkbox">☐ <span class="label">Mail</span></span>
+								</div>
+							</div>
+							<div class="item-4">
+								<h3>Timeframe: </h3>
+								<div class="checkbox-group">
+									<span id="records.deliveryMethod.fast" class="checkbox">☐ <span class="label">1-2 days</span></span>
+									<span id="records.deliveryMethod.medium" class="checkbox">☐ <span class="label">3-5 days</span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item-12">
+						<label>Recipient: <input id="records.recipient"/></label>
+					</div>
+					<div class="item-6">
+						<label>Email: <input id="records.recipient.email"/></label>
+					</div>
+					<div class="item-6">
+						<label>Fax: <input id="records.recipient.fax"/></label>
+					</div>
+					<div class="item-12">
+						<label>Address: <input id="records.recipient.mail.address"/></label>
+					</div>
+					<div class="item-6">
+						<label>City: <input id="records.recipient.mail.city"/></label>
+					</div>
+					<div class="item-2">
+						<label>State: <input id="records.recipient.mail.state"/></label>
+					</div>
+					<div class="item-4">
+						<label>ZIP Code: <input id="records.recipient.mail.zipCode"/></label>
+					</div>
+				</div>
+			</main>
+		</section>
+
+		<section id="records">
+			<header>
+				<h2>Records</h2>
+			</header>
+			<main>
+				<div class="grid">
+					<div class="item-6">
+						<label>Records From Date: <input id="records.startDate"/></label>
+					</div>
+					<div class="item-6">
+						<label>Records To Date: <input id="records.endDate"/></label>
+					</div>
+				</div>
+				<div class="grid">
+					<div class="item-6">
+						<h3>Information Requested: </h3>
+						<div class="grid">
+							<div class="item-6">
+								<div id="records.infoRequested.records" class="checkbox">☐ <span class="label">Records</span></div>
+								<div id="records.infoRequested.films" class="checkbox">☐ <span class="label">Films (Images)</span></div>
+								</div>
+							<div class="item-6">
+								<div id="records.infoRequested.bills" class="checkbox">☐ <span class="label">Bills</span></div>
+								<div id="records.infoRequested.disabilityForm" class="checkbox">☐ <span class="label">Disability Form</span></div>
+							</div>
+							<div class="item-12">
+								<label>Specific Information Requested: <input id="records.specificInfoRequested"/></label>
+							</div>
+						</div>
+					</div>
+					<div class="item-6">
+						<h3>Reason for Release: </h3>
+						<div class="grid">
+							<div class="item-6">
+								<div id="records.reasonForRelease.continuingCare" class="checkbox">☐ <span class="label">Continuing Care</span></div>
+								<div id="records.reasonForRelease.transferCare" class="checkbox">☐ <span class="label">Transfer Care</span></div>
+								<div id="records.reasonForRelease.secondOpinion" class="checkbox">☐ <span class="label">Second Opinion</span></div>
+								<div id="records.reasonForRelease.personal" class="checkbox">☐ <span class="label">Personal</span></div>
+								<div id="records.reasonForRelease.litigation" class="checkbox">☐ <span class="label">Litigation</span></div>
+							</div>
+							<div class="item-6">
+								<div id="records.reasonForRelease.insuranceUnderwriting" class="checkbox">☐ <span class="label">Insurance Underwriting</span></div>
+								<div id="records.reasonForRelease.insuranceClaim" class="checkbox">☐ <span class="label">Insurance Claim</span></div>
+								<div id="records.reasonForRelease.undisclosed" class="checkbox">☐ <span class="label">Undisclosed</span></div>
+								<div id="records.reasonForRelease.vro" class="checkbox">☐ <span class="label">VRO</span></div>
+								<div id="records.reasonForRelease.disabilityForm" class="checkbox">☐ <span class="label">Disability Form</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</section>
+
+		<section id="doctor">
+			<header>
+				<h2>Doctor</h2>
+			</header>
+			<main>
+				<div class="grid">
+					<div class="item-12">
+						<label>Doctor or facility you would like information from: <input id="doctor"/></label>
+					</div>
+					<div class="item-6">
+						<label>Phone Number: <input id="doctor.phoneNumber"/></label>
+					</div>
+					<div class="item-6">
+						<label>Fax: <input id="doctor.fax"/></label>
+					</div>
+					<div class="item-12">
+						<label>Address: <input id="doctor.address"/></label>
+					</div>
+					<div class="item-6">
+						<label>City: <input id="doctor.city"/></label>
+					</div>
+					<div class="item-2">
+						<label>State: <input id="doctor.state"/></label>
+					</div>
+					<div class="item-4">
+						<label>ZIP Code: <input id="doctor.zipCode"/></label>
+					</div>
+				</div>
+			</main>
+		</section>
+
+		<section>
+			<header>
+				<h2>Signature</h2>
+			</header>
+			<main>
+				<div class="grid">
+					<div class="item-12">
+						<div class="label">I, the requestor for this Medical Release of Information Form warrant the truthfulness of the information provided in this application.</div>
+					</div>
+					<div class="item-12">
+						<div class="grid">
+							<div class="item-6">
+								<div class="grid">
+									<div class="item-12">
+										<label>Requestor <input id="summary.signature"/></label>
+									</div>
+									<div class="item-12">
+										<label>Requestor's Email <input id="summary.email"></label>
+									</div>
+									<div class="item-12">
+										<label>Driver's License / State ID <input id="upload.id"></label>			
+									</div>
+								</div>
+							</div>
+							<div class="item-6">
+								<div style="display: flex; justify-content: center">
+									<div class="photo"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</section>
+	</form>
+</body>
+</html>

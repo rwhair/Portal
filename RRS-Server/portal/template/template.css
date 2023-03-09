@@ -1,0 +1,122 @@
+html {
+	font-size: 10pt;
+	box-sizing: border-box;
+	width: 8.5in;
+	height: 11in;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	width: 8.5in;
+	height: 11in;
+	padding: 0.125in 0.25in 0.25in 0.25in;
+}
+
+body > header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+body > header > img {
+	width: 2.0125in;
+	height: 1.25in;
+}
+
+h1 {
+	font-family: "Roboto Slab";
+	font-weight: bold;
+	font-size: 1.125rem;
+	margin: 0;
+	padding: 0.333333rem;
+}
+
+body > form {
+	border-top: 1px black solid;
+	border-left: 1px black solid;
+	border-right: 1px black solid;
+}
+
+body > form > section {
+	display: flex;
+	flex-direction: row;
+	border-bottom: 1px black solid;
+}
+
+body > form > section > header {
+	flex: 0 1 auto;
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+	border-left: 1px black solid;
+	text-align: center;
+}
+
+h2 {
+	font-family: "Roboto Slab";
+	font-weight: bold;
+	font-size: 1rem;
+	margin: 0;
+	padding: 0.333333rem;
+}
+
+body > form > section > main {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+label {
+	font-family: "Open Sans";
+	font-size: 0.75rem;
+	font-weight: bold;
+}
+
+input {
+	width: 100%;
+	border: none;
+	border-bottom: 1px black solid;
+	font-family: Courier;
+	font-size: 10pt;
+}
+
+h3 {
+	font-family: "Open Sans";
+	font-size: 0.75rem;
+	font-weight: bold;
+	margin: 0;
+	padding: 0.17rem;
+	text-align: center;
+}
+
+.checkbox-group {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.checkbox {
+	font-family: "Open Sans";
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.label {
+	font-family: "Open Sans";
+	font-size: 0.75rem;
+	font-weight: bold;
+}
+
+.photo {
+	width: 2.4in;
+	height: 1.6in;
+	max-width: 2.4in;
+	max-height: 1.6in;
+}

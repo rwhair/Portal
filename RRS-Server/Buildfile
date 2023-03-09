@@ -1,0 +1,1 @@
+portal: cd portal && go build -o ../bin/portal

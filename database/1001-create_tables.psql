@@ -1,0 +1,51 @@
+set client_min_messages = warning;
+
+drop table if exists requests cascade;
+create table requests ();
+
+drop table if exists request_items cascade;
+create table request_items ();
+
+drop table if exists request_item_types cascade;
+create table request_item_types ();
+
+drop table if exists shipping_types cascade;
+create table shipping_types ();
+
+drop table if exists request_history cascade;
+create table request_history ();
+
+drop table if exists hipaa_compliance cascade;
+create table hipaa_compliance ();
+
+drop table if exists request_hipaa_compliance cascade;
+create table request_hipaa_compliance ();
+
+drop table if exists copy_locations cascade;
+create table copy_locations ();
+
+drop table if exists copy_location_physicians cascade;
+create table copy_location_physicians ();
+
+drop table if exists users cascade;
+create table users ();
+
+drop table if exists user_accounts cascade;
+create table user_accounts ();
+
+drop table if exists user_preferences cascade;
+create table user_preferences ();
+
+drop table if exists user_permission_types cascade;
+create table user_permission_types ();
+
+drop table if exists user_types cascade;
+create table user_types ();
+
+drop table if exists user_permissions cascade;
+create table user_permissions ();
+
+drop table if exists user_permission_types cascade;
+create table user_permission_types ();
+
+drop table if exists

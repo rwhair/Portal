@@ -1,0 +1,124 @@
+{
+    "patient":{
+        "firstName":"Rick",
+        "lastName":"Hair",
+        "aka":"",
+        "dateOfBirth":"10/22/1979",
+        "ssn":"3333",
+        "email":"rwhair@gmail.com",
+        "confirmEmail":"rwhair@gmail.com",
+        "phoneNumber":"(318) 680-6057"
+    },
+    "records":{
+        "recipient":"P",
+        "startDate":"01/01/2012",
+        "endDate":"12/31/2012",
+        "infoRequested":"R",
+        "reasonForRelease":"Continuing Care",
+        "specificInfoRequested":"",
+        "deliveryMethod":"E",
+        "timeframe":"F",
+        "patient":{
+            "firstName":"",
+            "lastName":"",
+            "fax":"",
+            "confirmFax":"",
+            "email":"",
+            "confirmEmail":"",
+            "address":"",
+            "addressLine2":"",
+            "city":"",
+            "state":"",
+            "zipCode":""
+        },
+        "doctor":{
+            "facility":"",
+            "firstName":"",
+            "lastName":"",
+            "fax":"",
+            "confirmFax":"",
+            "email":"",
+            "confirmEmail":"",
+            "address":"",
+            "addressLine2":"",
+            "city":"",
+            "state":"",
+            "zipCode":""
+        },
+        "thirdParty":{
+            "company":"",
+            "firstName":"",
+            "lastName":"",
+            "fax":"",
+            "confirmFax":"",
+            "email":"",
+            "confirmEmail":"",
+            "address":"",
+            "addressLine2":"",
+            "city":"",
+            "state":"",
+            "zipCode":""
+        }
+    },
+    "doctor":{
+        "facility":"",
+        "firstName":"James",
+        "lastName":"Warner",
+        "phoneNumber":"(318) 396-5206",
+        "fax":"",
+        "address":"144 Trace Cir.",
+        "addressLine2":"",
+        "city":"West Monroe",
+        "state":"LA",
+        "zipCode":"71291"
+    },
+    "summary":{
+        "email":"rwhair@gmail.com",
+        "confirmEmail":"rwhair@gmail.com",
+        "emailSameAsPatient":true,
+        "acknowledge":true,
+        "signature":"Rick Hair",
+        "payment":{
+            "type":"C",
+            "creditCard":{
+                "number":"4111111111111111",
+                "name":"Rick Hair",
+                "expDate":"04/20",
+                "securityCode":"666",
+                "firstName":"Rick",
+                "lastName":"Hair",
+                "address":"445 Prospect St.",
+                "addressLine2":"",
+                "city":"Shreveport",
+                "state":"LA",
+                "zipCode":"71104"
+            },
+            "bankTransfer":{
+                "accountType":"",
+                "accountName":"",
+                "routingNumber":"",
+                "accountNumber":"",
+                "bankName":"",
+                "checkNumber":"",
+                "amount":"",
+                "firstName":"",
+                "lastName":"",
+                "address":"",
+                "addressLine2":"",
+                "city":"",
+                "state":"",
+                "zipCode":""
+            }
+        }
+    },
+    "request":{
+        "user":{
+            "type":"patient"
+        },
+        "request":{
+            "type":"medicalRecords"
+        }
+    },
+    "survey":"http://survey.com",
+    "surveyMessage":"Please help us improve this site by providing your feedback in a short survey. By doing so, you will be entered to win a $25 gift card."
+}

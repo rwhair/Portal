@@ -1,0 +1,1 @@
+web: bin/portal -authLoginID $AUTH_LOGIN_ID -authTransactionKey $AUTH_TRANSACTION_KEY

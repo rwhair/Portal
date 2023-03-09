@@ -1,0 +1,12 @@
+version: 0.0
+os: linux
+files:
+    - source: /build
+      destination: /var/www/html
+hooks:
+    BeforeInstall:
+        - location: scripts/cleanup_webroot.sh
+          timeout: 300
+          runas: root
+
+
